@@ -1,0 +1,343 @@
+body {
+	background-color: #f2f2f2;
+}
+
+.lede, p {
+	width: 50%;
+	max-width: 640px;
+}
+
+p {
+	margin: 30px auto;
+	font: 18px/29px $tiempos;
+	color: #3c3c3c;
+
+
+	em {
+		font-family: $tiempos-italic;
+		font-style: normal;
+	}
+}
+
+.icon-font {
+	font-family: 'Bloomberg';
+}
+
+.lede, .parallax_wrapper {
+	position: relative;
+	z-index: 2;
+}
+
+.body-copy {
+	z-index: 40;
+    min-height: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 25px;
+
+    strong {
+		font-family: $NHaas-bold;
+		font-weight: 600;
+		font-size: 20px;
+	}
+
+	.pullquote {
+		font: 3em/1.2em $tiempos-bold;
+		width: 70%;
+		margin: 50px auto 30px;
+	}
+
+	blockquote.twitter-tweet {
+	  margin: 10px auto;
+	  max-width: 640px;
+	}
+
+	.related-story {
+		font-family: $NHaas-bold;
+		background-color: #ddd;
+		padding: 5px 13px;
+		width: 26%;
+		margin-left: 28%;
+		margin-top: 50px;
+	}
+}
+
+hr {
+	height: 1px;
+	background-color: $black;
+	border: none;
+	width: 20%;
+	margin:0 0 3em;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    display: none;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+
+    h1, p {
+    	color: #fff;
+    }
+
+    .menu-item {
+    	display: inline-block;
+		vertical-align: top;
+		padding: 10px;
+		text-decoration: none;
+		width: 15%;
+
+		.menu-number {
+			font: 5em $HaasBold;
+			color: #ddd;
+			margin: 0;
+			width: 100%;
+		}
+
+		.menu-name {
+			font: 1.4em $HaasBold;
+			color: $black;
+			margin: -20% 0 0 0;
+			width: 100%;
+		}
+    }
+}
+
+.img_right.adunit {
+	width: 300px;
+	height: 250px;
+	background-color: #ddd;
+}
+
+.bannerbox {
+  width: 100%;
+  height: 112px;
+  position: relative;
+  background-color: #ddd;
+}
+.bannerbox .bannerad {
+  width: 728px;
+  height: 90px;
+  background-color: #fff;
+  margin: 0 auto;
+  top: 10px;
+  position: relative;
+}
+
+.section-break {
+	margin-top: 75px;
+}
+
+.section-break:first-line {
+	font-family: 'HaasTextBold', Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	color: $black;
+}
+
+
+/*HEADER*/
+
+#subheader {
+	background-color: #f2f2f2;
+	font: 16px $HaasBold;
+	text-align: left;
+	height: initial;
+	padding: 10px 0;
+	border-bottom: 1px solid #c1c1c1;
+	position: fixed;
+	top: 121px;
+	z-index: 11;
+	width: 100%;
+
+	@include transition(all 0.3s ease-out 0.1s);
+
+	p {
+		color: $black;
+		margin: 0 10px;
+		font: 16px $HaasBold;
+		display: inline;
+	}
+
+	.markets-logo {
+		margin-left: 60px;
+		height: 20px;
+		vertical-align: middle;
+	}
+	
+	a {
+		text-decoration: none;
+		color: rgba($black, 0.7);
+		margin: 0 10px;
+
+		&:hover {
+			color: rgba($black, 1);
+		}
+	}
+
+	.active {
+		color: rgba($black, 1);
+	}
+
+	.menu-btn {
+		text-align: right;
+		float: right;
+		margin-right: 30px;
+	}
+}
+
+
+
+
+
+.hero-text {
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 350px;
+	text-align: center;
+
+	h1 {
+		font: 100px/100px $druk;
+		margin: 20px 0;
+		color: $white;
+	}
+
+	.dek {
+		text-align: center;
+		padding: 0;
+		text-shadow: 0 0 10px rgba($white, 0.65);
+	}
+}
+
+/*IMAGES*/
+
+figure {
+	width: 100%;
+
+	img {
+		max-width: 100%;
+	}
+}
+
+figcaption {
+	color: #3c3c3c;
+	font: 0.9em $NHaas;
+
+	strong {
+		font-family: $NHaas-bold;
+		font-weight: 600;
+	}
+}
+
+.img_full {
+	width: 90%;
+	max-width: 970px;
+	margin: 0 auto 3rem;
+
+	img {
+		max-width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.img_left, .img_right {
+	max-width: 360px;
+	width: auto;
+}
+
+.img_left {
+	float: left;
+	margin: 0.5rem 5rem 3rem 10%;
+}
+
+.img_right {
+	float: right;
+	margin: 0.5rem 10% 3rem 5rem;
+}
+
+.slide_img {
+	img {
+		width: 100%;
+	}
+}
+
+.slide-social {
+	font-family: 'Bloomberg';
+	color: $black;
+	font-size: 16px;
+}
+
+.photo-info {
+  border-bottom: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.credit {
+  font-size: 0.8em;
+  font-family: $NHaas;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #999;
+}
+
+/*VIDEO*/
+.video-section {
+
+	margin-bottom: 1.5em;
+
+	video {
+		min-width: 100%;
+		// min-height: 70vh;
+	}
+}
+
+.video-player {
+	background-color: $black;
+	width: 100%;
+
+  	#video-wrapper & {
+		width: 100vw;
+		position: relative;
+		background-color: $black;
+		display: block;
+	}
+}
+
+.video-js {
+	margin: 0 auto;
+	min-width: 970px;
+	min-height: 546px;
+	display: block;
+	// @include backface-visibility(hidden);
+
+	#main & {
+		// margin-top: -54%;
+	}
+}
+
+.player .video-wrapper .video {
+	height: auto !important;
+}
+
+.player .target {
+	height: auto !important;
+}
+
+/*TERMINAL*/
+
+.terminal a {
+	text-decoration: none;
+}
+
+.terminal .video-player {
+	display: none;
+}
+
+.terminal .video-section:after {
+	content: none;
+}

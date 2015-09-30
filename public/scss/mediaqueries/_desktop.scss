@@ -1,0 +1,29 @@
+@media screen and (min-width: 1024px) and (max-width: 1359px) {
+
+	.lede-small-img {
+
+		.lede-content {
+			.number {
+				font-size: 12em;
+			}
+
+			h1 {
+				font-size: 3.7em;
+			}
+		}
+	}
+
+	.lede-full-width-img {
+		.lede-content {
+			margin-top: -30%;
+
+			.number {
+				font-size: 12em;
+			}
+
+			h1 {
+				font-size: 3.7em;
+			}
+		}
+	}
+}

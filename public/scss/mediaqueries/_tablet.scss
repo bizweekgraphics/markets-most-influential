@@ -1,0 +1,88 @@
+@media screen and (max-width: 1023px) {
+
+	.lede, p, .slide h3 {
+		width: 80%;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.body-copy {
+
+		.pullquote {
+			font-size: 2.4em;
+			width: 80%;
+		}
+
+	}
+
+	.img_right {
+		margin-bottom: 2rem;
+		margin-left: 2rem;
+	}
+
+	.img_left {
+		margin-bottom: 2rem;
+		margin-right: 2rem;
+	}
+
+	.parallax_wrapper {
+		overflow: visible;
+		@include transform(none);
+		@include transform-style(initial);
+
+		.slide_img {
+			position: relative;
+		}
+	}
+
+	.lede-small-img {
+		.lede-content {
+			margin-left: 12%;
+			width: 45%;
+
+			.number {
+				font-size: 10em;
+			}
+			h1 {
+				font-size: 3em;
+			}
+			.blurb {
+				font-size: 1.1em;
+			}
+		}
+	}
+
+	.next-story {
+		width: 80%;
+
+		p {
+			font-size: 18px;
+		}
+	}
+
+	.video-section {
+		
+		video {
+			min-height: initial;
+		}
+	}
+
+	.video-js {
+		min-width: 760px;
+		min-height: 428px;
+	}
+
+	#subheader {
+		.markets-logo {
+			margin-left: 10px;
+		}
+
+		.menu-btn {
+			margin-right: 10px;
+		}
+	}
+
+}

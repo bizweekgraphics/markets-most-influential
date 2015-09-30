@@ -1,0 +1,409 @@
+#main-wrapper, #slider, #wrapper-slides, .slide {
+	padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#video-wrapper  {
+	width: 100vw;
+	position: relative;
+	background-color: $black;
+	display: block;
+
+
+	.video-player {
+		display: none;
+		position: relative;
+		left: 0;
+		min-height: 800px;
+		padding-top: 0;
+	}
+
+}
+
+#slider {
+	width: 100%;
+	overflow: hidden;
+	@include transform(translate(0,0) scale3d(1,1,1)); 
+	@include transform-style(preserve-3d);
+	@include backface-visibility(hidden);
+}
+
+.slide {
+	display: block;
+    width: 100%;
+    opacity: 0;
+	@include backface-visibility(hidden);
+
+    @include transform(translate3d(0,0,0));
+	@include transform-style(preserve-3d);
+    position: absolute;
+    top: 0;
+
+	h2 {
+		font: 70px/68px $druk;
+	}
+
+	h3 {
+		font: 38px/44px $HaasBold;
+		width: 50%;
+		max-width: 640px;
+		margin: 30px auto 15px;
+	}
+    
+    a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.slide-byline {
+		font-family: $NHaas-medium;
+		font-size: 19px;
+		color: #888;
+		margin-top: 15px;
+		padding-bottom: 6px;
+		border-bottom: 1px solid #ccc;
+	}
+}
+
+
+.slide-selected {
+    position: relative;
+    opacity: 1;
+}
+
+/*ARROWS*/
+
+#nav-previous,
+#nav-next {
+    position: fixed;
+    top: 0;
+    width: 5%;
+    height: 100%;
+    cursor: pointer;
+	
+	span {
+	    position: absolute;
+	    top: 41.4%;
+	    opacity: 0.15;
+	    font-size: 5em;
+	    width: 60px;
+	    height: 214px;
+
+	 	&:hover {
+		    opacity: 0.7;
+	    }
+	}
+}
+
+
+#nav-previous, #nav-previous span {
+    left: 0;
+}
+
+#nav-next, #nav-next span {
+    right: 0;
+}
+
+#nav-previous img {
+	@include transform(rotate(180deg));
+}
+
+.next-story {
+	margin: 50px auto;
+	width: 70%;
+	border-top: 4px solid #ddd;
+
+	p {
+		font-family: $HaasBold;
+		font-size: 24px;
+		color: $black;
+		text-align: center;
+		width: 100%;
+		max-width: 100%;
+
+		.prev, .next {
+			font-family: 'Bloomberg'; 
+			margin-top: 3px; 
+			font-size: 18px;
+		}
+
+		.caps {
+			font-family: 'HaasText'; 
+			font-size: 18px;
+		}
+
+		.horiz {
+			font-family: 'HaasText'; 
+			color: #ccc; 
+			padding: 0 10px;
+		}
+	}
+}
+
+.photo-byline {
+	margin-top: 10px;
+	font: 1em/ 1.53em 'HaasText', 'Helvetica';
+	color: #888;
+}
+
+/*HERO IMAGES*/
+
+.hero-module {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+
+#slide-zero {
+	width: 100%;
+	background-color: #ebebeb;
+	background-image: url('../img/50Final02.jpg');
+	background-position: center 4%;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	
+	.lede-content, .dek, .illo-byline, .start-btn, .byline {
+		color: $black;
+	}
+
+	.lede-content {
+		position: relative;
+		width: 80%;
+		margin: 0 auto;
+		padding: 49% 0;
+	}
+	
+	h1 {
+		font: 84px/100px $NHaas-bold;
+		text-align: center;
+		padding: 15px 0 10px;
+		margin-bottom: 30px;
+		margin-top: 0;
+	}
+
+	.dek {
+		font: 24px/32px $tiempos;
+		margin: 0 auto;
+		padding: 0;
+		width: 100%;
+		background-color: transparent;
+		max-width: 850px;
+
+		p {
+			width: 100%;
+			max-width: 100%;
+
+			&:first-of-type {
+				font-size: 22px;
+				line-height: 34px;
+			}
+		}
+	}
+
+	.illo-byline {
+		font: 18px/22px $tiempos-bold;
+		margin: 20px auto 60px;
+		max-width: 800px;
+	}
+
+	.byline {
+		font-weight: 600;
+	}
+
+	.start-btn {
+		font: 18px $HaasBold;
+		background-color: $black;
+		color: $white;
+		padding: 20px;
+		width: 200px;
+		margin: 0 0 0 12%;
+	}
+}
+
+#slide-two {
+	.img_full {
+		max-width: 1000px;
+	}
+}
+
+/*--- LEDE W/FULL-WIDTH IMAGE & TEXT OVERLAY ---*/
+
+.lede-full-width-img {
+	width: 100%;
+	height: auto;
+	position: relative;
+
+	.lede-img {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.lede-content {
+		width: 40%;
+		margin: -25% auto 0 15%;
+		position: absolute;
+		z-index: 1;
+		font-family: $HaasBold;
+		
+		h1 {
+			color: $black;
+			display: inline;
+			font-size: 4em;
+		}
+
+		.number {
+			color: rgba(0,0,0,0.15);
+			font-size: 14em;
+			font-family: $HaasBold;
+			margin: 0;
+		}
+
+		.title {
+			display: inline;
+			text-align: left;
+			font-family: $NHaas;
+			font-size: 1.3em;
+		}
+
+		.blurb {
+			font-family: $tiempos;
+			font-size: 1.3em;
+			line-height: 1.5em;
+			margin: 20px 0;
+			width: 90%;
+		}
+
+		.byline-feat {
+			font-family: $HaasBold;
+			color: $black;
+			margin: 5px 0;
+			background-color: $white;
+			display: inline;
+		}
+	}
+}
+
+/*--- LEDE W/SMALL IMG ---*/
+
+.lede-small-img {
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin: 0;
+	padding: 2% 0;
+	border-bottom: 8px solid $black;
+
+	&.blue {
+		background-color: #6dcffc;
+	}
+
+	&.purple {
+		background-color: #b887be;
+	}
+
+	&.green {
+		background-color: #a1cd54;
+	}
+
+	&.pink {
+		background-color: #f5888b;
+	}
+
+	&.orange {
+		background-color: #faa14f;
+	}
+
+	&.teal {
+		background-color: #3fbeb2;
+	}
+
+	.lede-img {
+		width: 45%;
+		display: block;
+		position: absolute;
+		bottom: 0;
+		right: 7%;
+	}
+
+	.lede-content {
+		width: 40%;
+		margin: 12% auto 0 15%;
+		position: relative;
+		z-index: 1;
+		font-family: $HaasBold;
+		
+		h1 {
+			color: $black;
+			display: inline;
+			font-size: 4em;
+		}
+
+		.number {
+			color: rgba(0,0,0,0.15);
+			font-size: 14em;
+			font-family: $HaasBold;
+			margin: 0;
+		}
+
+		.title {
+			display: inline;
+			text-align: left;
+			font-family: $NHaas;
+			font-size: 1.3em;
+		}
+
+		.blurb {
+			font-family: $tiempos;
+			font-size: 1.3em;
+			line-height: 1.5em;
+			margin: 20px 0;
+			width: 90%;
+		}
+
+		.byline-feat {
+			font-family: $HaasBold;
+			color: $black;
+			margin: 5px 0;
+			background-color: $white;
+			display: inline;
+		}
+	}
+}
+
+
+
+/*--- VIDEO LEDE ---*/
+
+/*------------ VIDEO STYLES ------------*/
+
+// .video {
+// 	margin: 40px auto;
+// }
+
+.terminal video {
+	display: none;
+}
+
+.dek {
+	text-align: left;
+	background-color: $white;
+	width: 100%;
+}
+
+.mobile-lede {
+	display: none;
+}
+
+
+.lede, .parallax_wrapper {
+	position: relative;
+	z-index: 2;
+}
+
+
+.mobile-lede, .video-player  {
+	display: none;
+}

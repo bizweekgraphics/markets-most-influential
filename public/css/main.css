@@ -1,0 +1,393 @@
+@font-face{
+ 	font-family:'Druk Wide Web';
+ 	src:url(https://s3.amazonaws.com/bw-fonts/DrukWide-Super-Web.eot);
+ 	src:url(https://s3.amazonaws.com/bw-fonts/DrukWide-Super-Web.eot?#iefix) format('embedded-opentype'),
+ 		url(https://s3.amazonaws.com/bw-fonts/DrukWide-Super-Web.woff) format('woff'),
+ 		url(https://s3.amazonaws.com/bw-fonts/DrukWide-Super-Web.ttf) format('truetype'),
+ 		url('https://s3.amazonaws.com/bw-fonts/DrukWide-Super-Web.svg#Druk Wide Web') format('svg');
+ 	font-weight:900;
+ 	font-style:normal;
+ 	font-stretch:normal;
+}
+
+@font-face{
+ 	font-family:'Druk Web';
+ 	src:url(https://s3.amazonaws.com/bw-fonts/Druk-Medium-Web.eot);
+ 	src:url(https://s3.amazonaws.com/bw-fonts/Druk-Medium-Web.eot?#iefix) format('embedded-opentype'),
+ 		url(https://s3.amazonaws.com/bw-fonts/Druk-Medium-Web.woff) format('woff'),
+ 		url(https://s3.amazonaws.com/bw-fonts/Druk-Medium-Web.ttf) format('truetype'),
+ 		url('https://s3.amazonaws.com/bw-fonts/Druk-Medium-Web.svg#Druk Web') format('svg');
+ 	font-weight:500;
+ 	font-style:normal;
+ 	font-stretch:normal;
+}
+
+@font-face{
+ 	font-family:'Druk Bold Web';
+ 	src:url(https://s3.amazonaws.com/bw-fonts/Druk-Bold-Web.eot);
+ 	src:url(https://s3.amazonaws.com/bw-fonts/Druk-Bold-Web.eot?#iefix) format('embedded-opentype'),
+ 		url(https://s3.amazonaws.com/bw-fonts/Druk-Bold-Web.woff) format('woff'),
+ 		url(https://s3.amazonaws.com/bw-fonts/Druk-Bold-Web.ttf) format('truetype'),
+ 		url('https://s3.amazonaws.com/bw-fonts/Druk-Bold-Web.svg#Druk Web') format('svg');
+ 	font-weight:500;
+ 	font-style:normal;
+ 	font-stretch:normal;
+}
+
+body {
+	/*background-color: #f1e6d2;*/
+}
+
+p {
+	width: 50%;
+	margin: 30px auto;
+	font-family: 'TiemposTextWeb-Regular', Georgia, serif;
+	font-size: 18px;
+	line-height: 29px;
+	color: #3c3c3c;
+
+}
+
+/*HEADER*/
+
+#header {
+	background-color: rgba(0,0,0,0.7);
+	font: 16px 'HaasDisplayBold', Helvetica, Arial, sans-serif;
+	text-align: left;
+	height: initial;
+	padding: 10px 20px;
+	border-bottom: none;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+}
+
+#header a {
+	text-decoration: none;
+	color: #fff;
+	margin: 0 10px;
+}
+
+#slider, #wrapper-slides, .slide {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#slider {
+	width: 100%;
+	overflow: hidden;
+	transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+	transform-style: preserve-3d;
+	-webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+	-webkit-transform-style: preserve-3d;
+	-moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+	-moz-transform-style: preserve-3d;
+	-ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+	-ms-transform-style: preserve-3d;
+	-o-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+	-o-transform-style: preserve-3d;
+}
+
+.slide {
+	display: block;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform-style: preserve-3d;
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform-style: preserve-3d;
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform-style: preserve-3d;
+    -o-transform: translate3d(0, 0, 0);
+    position: absolute;
+    top: 0;
+    /*background-color: #f1e6d2;*/
+}
+
+.slide a {
+	color: inherit;
+}
+
+.slide-content-wrap {
+	/*max-width: 1280px;*/
+	/*margin: 0 auto;*/
+}
+
+.slide-selected {
+    position: relative;
+}
+
+/*ARROWS*/
+
+#nav-previous,
+#nav-next {
+    position: fixed;
+    top: 0;
+    width: 5%;
+    height: 100%;
+    cursor: pointer;
+}
+#nav-previous span,
+#nav-next span {
+    position: absolute;
+    top: 41.4%;
+    opacity: 0.25;
+    font-size: 5em;
+    width: 60px;
+    height: 214px;
+}
+#nav-previous span:hover,
+#nav-next span:hover {
+    opacity: 0.7;
+}
+#nav-previous, #nav-previous span {
+    left: 0;
+}
+#nav-previous img {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+#nav-next, #nav-next span {
+    right: 0;
+}
+
+/*HERO IMAGES*/
+
+.hero-module {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+
+#slide-zero {
+	background-image: url(../img/aus-3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: 100%;
+}
+
+#slide-zero .lede-content {
+	position: absolute;
+	bottom: 30%;
+	left: 50%;
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 80%;
+	color: #fff;
+}
+
+#slide-zero h1 {
+	font: 100px/100px 'Druk Web', Helvetica, Arial, sans-serif;
+	text-align: center;
+	padding: 15px 0 10px;
+	margin-bottom: 30px;
+	margin-top: 0;
+}
+
+#slide-zero .dek {
+	font: 34px/40px 'TiemposHeadlineWeb-Bold', Georgia, serif;
+	margin: 10px auto;
+	color: #fff;
+	width: 100%;
+}
+
+#slide-zero .illo-byline {
+	font: 18px/22px 'TiemposHeadlineWeb-Bold', Georgia, serif;
+	margin: 20px auto 60px;
+	max-width: 800px;
+	text-align: center;
+	color: #fff;
+}
+
+#slide-zero .start-btn {
+	font: 18px 'HaasDisplayBold', Helvetica, Arial, sans-serif;
+	color: #fff;
+	background-color: #000;
+	padding: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 200px;
+	margin: 0 auto;
+}
+
+#slide-one .hero-module {
+	background-image: url(../img/aus-1.jpg);
+}
+
+#slide-two .hero-module {
+	background-image: url(../img/engineering_ink1.png);
+}
+
+#slide-three .hero-module {
+	background-image: url(../img/english_ink1.png);
+}
+
+.hero-text {
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 350px;
+	text-align: center;
+}
+
+.hero-text h1 {
+	font: 100px/100px 'Druk Web', Helvetica, Arial, sans-serif;
+	margin: 20px 0;
+	color: #fff;
+}
+
+.hero-text .dek {
+	text-align: center;
+	padding: 0;
+	text-shadow: 0px 0px 10px rgba(255,255,255,0.65);
+}
+
+.body-copy {
+	position: relative;
+}
+
+/*IMAGES*/
+
+.img_full {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto 3rem;
+}
+
+.photo-info {
+  border-bottom: 1px solid #ddd;
+}
+
+figcaption {
+  margin-right: 0.325em;
+  margin-top: 0.3em;
+}
+
+.credit {
+  font-size: 0.6em;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  color: #999;
+}
+
+/*VIDEO*/
+
+.video-section video {
+	min-height: 100vh;
+	min-width: 100%;
+}
+
+.video-section:after {
+	content: 'a';
+	font-family: 'Bloomberg';
+	font-size: 8em;
+	position: absolute;
+	text-align: center;
+	color: #fff;
+	display: block;
+	margin-top: -35%;
+	z-index: 1000;
+	left: 50%;
+}
+
+/*PHOTO GALLERY*/
+
+.photo-gallery img {
+	width: 100%;
+	height: 100vh;
+}
+
+.ad-unit {
+	width: 300px;
+	height: 250px;
+	background-color: #444;
+	float: right;
+	margin: 20px;
+}
+
+.slide h2 {
+	font: 55px/58px 'Druk Web', Helvetica, Arial, sans-serif;
+	margin-top: 10px;
+}
+
+.slide h3 {
+	font: 22px/28px 'HaasDisplayBold', Helvetica, Arial, sans-serif;
+	margin-top: 0px;
+}
+
+.sidebar .clearboth {
+	margin-bottom: 10px;
+}
+
+.terminal a {
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1280px) {
+
+	.slide h3 {
+		font-size: 22px;
+		line-height: 28px;
+	}
+}
+
+@media screen and (max-width: 1020px) {
+
+}
+
+@media screen and (max-width: 760px) {
+
+	.hero-module {
+		min-height: 72vh;
+		background-position: top center;
+	}
+
+	.hero-text {
+		padding-top: 130px;
+	}
+
+	.hero-text h1 {
+		font-size: 70px;
+		line-height: 70px;
+	}
+
+	#nav-previous span, #nav-next span {
+		width: 35px;
+	}
+
+	#header {
+		display: none;
+	}
+
+	#slide-zero h1 {
+		font-size: 52px;
+		line-height: 54px;
+		border-top: 1px solid #241f19;
+		border-bottom: 1px solid #241f19;
+		padding: 15px 0 10px;
+		margin-bottom: 30px;
+	}
+
+	#slide-zero .dek {
+		font-size: 26px;
+		line-height: 30px;
+	}
+
+	#slide-zero .illo-byline {
+		font-size: 14px;
+		line-height: 16px;
+		margin: 20px auto 60px;
+		max-width: 100%;
+	}
+
+}
