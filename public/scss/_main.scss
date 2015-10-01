@@ -74,7 +74,7 @@ hr {
 .overlay {
     position: fixed;
     top: 0;
-    z-index: 99;
+    z-index: 1000;
     display: none;
     overflow: auto;
     width: 100%;
@@ -149,10 +149,9 @@ hr {
 	height: initial;
 	padding: 10px 0;
 	border-bottom: 1px solid #c1c1c1;
-	position: fixed;
-	top: 121px;
 	z-index: 11;
 	width: 100%;
+	margin-top: -1px;
 
 	@include transition(all 0.3s ease-out 0.1s);
 

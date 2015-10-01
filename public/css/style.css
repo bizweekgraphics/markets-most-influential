@@ -105,7 +105,7 @@ hr {
 .overlay {
   position: fixed;
   top: 0;
-  z-index: 99;
+  z-index: 1000;
   display: none;
   overflow: auto;
   width: 100%;
@@ -185,62 +185,61 @@ hr {
   height: initial;
   padding: 10px 0;
   border-bottom: 1px solid #c1c1c1;
-  position: fixed;
-  top: 121px;
   z-index: 11;
   width: 100%;
+  margin-top: -1px;
   -webkit-transition: all 0.3s ease-out 0.1s;
   -moz-transition: all 0.3s ease-out 0.1s;
   transition: all 0.3s ease-out 0.1s;
 }
-/* line 159, ../scss/_main.scss */
+/* line 158, ../scss/_main.scss */
 #subheader p {
   color: #000;
   margin: 0 10px;
   font: 16px "HaasDisplayBold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   display: inline;
 }
-/* line 166, ../scss/_main.scss */
+/* line 165, ../scss/_main.scss */
 #subheader .markets-logo {
   margin-left: 60px;
   height: 20px;
   vertical-align: middle;
 }
-/* line 172, ../scss/_main.scss */
+/* line 171, ../scss/_main.scss */
 #subheader a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
   margin: 0 10px;
 }
-/* line 177, ../scss/_main.scss */
+/* line 176, ../scss/_main.scss */
 #subheader a:hover {
   color: black;
 }
-/* line 182, ../scss/_main.scss */
+/* line 181, ../scss/_main.scss */
 #subheader .active {
   color: black;
 }
-/* line 186, ../scss/_main.scss */
+/* line 185, ../scss/_main.scss */
 #subheader .menu-btn {
   text-align: right;
   float: right;
   margin-right: 30px;
 }
 
-/* line 197, ../scss/_main.scss */
+/* line 196, ../scss/_main.scss */
 .hero-text {
   width: 60%;
   margin: 0 auto;
   padding-top: 350px;
   text-align: center;
 }
-/* line 203, ../scss/_main.scss */
+/* line 202, ../scss/_main.scss */
 .hero-text h1 {
   font: 100px/100px "Druk Web", sans-serif;
   margin: 20px 0;
   color: #ffffff;
 }
-/* line 209, ../scss/_main.scss */
+/* line 208, ../scss/_main.scss */
 .hero-text .dek {
   text-align: center;
   padding: 0;
@@ -248,76 +247,76 @@ hr {
 }
 
 /*IMAGES*/
-/* line 218, ../scss/_main.scss */
+/* line 217, ../scss/_main.scss */
 figure {
   width: 100%;
 }
-/* line 221, ../scss/_main.scss */
+/* line 220, ../scss/_main.scss */
 figure img {
   max-width: 100%;
 }
 
-/* line 226, ../scss/_main.scss */
+/* line 225, ../scss/_main.scss */
 figcaption {
   color: #3c3c3c;
   font: 0.9em "HaasText", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
-/* line 230, ../scss/_main.scss */
+/* line 229, ../scss/_main.scss */
 figcaption strong {
   font-family: "HaasDisplayBold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 600;
 }
 
-/* line 236, ../scss/_main.scss */
+/* line 235, ../scss/_main.scss */
 .img_full {
   width: 90%;
   max-width: 970px;
   margin: 0 auto 3rem;
 }
-/* line 241, ../scss/_main.scss */
+/* line 240, ../scss/_main.scss */
 .img_full img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
 }
 
-/* line 248, ../scss/_main.scss */
+/* line 247, ../scss/_main.scss */
 .img_left, .img_right {
   max-width: 360px;
   width: auto;
 }
 
-/* line 253, ../scss/_main.scss */
+/* line 252, ../scss/_main.scss */
 .img_left {
   float: left;
   margin: 0.5rem 5rem 3rem 10%;
 }
 
-/* line 258, ../scss/_main.scss */
+/* line 257, ../scss/_main.scss */
 .img_right {
   float: right;
   margin: 0.5rem 10% 3rem 5rem;
 }
 
-/* line 264, ../scss/_main.scss */
+/* line 263, ../scss/_main.scss */
 .slide_img img {
   width: 100%;
 }
 
-/* line 269, ../scss/_main.scss */
+/* line 268, ../scss/_main.scss */
 .slide-social {
   font-family: 'Bloomberg';
   color: #000;
   font-size: 16px;
 }
 
-/* line 275, ../scss/_main.scss */
+/* line 274, ../scss/_main.scss */
 .photo-info {
   border-bottom: 1px solid #ddd;
   margin-top: 10px;
 }
 
-/* line 280, ../scss/_main.scss */
+/* line 279, ../scss/_main.scss */
 .credit {
   font-size: 0.8em;
   font-family: "HaasText", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
@@ -327,21 +326,21 @@ figcaption strong {
 }
 
 /*VIDEO*/
-/* line 289, ../scss/_main.scss */
+/* line 288, ../scss/_main.scss */
 .video-section {
   margin-bottom: 1.5em;
 }
-/* line 293, ../scss/_main.scss */
+/* line 292, ../scss/_main.scss */
 .video-section video {
   min-width: 100%;
 }
 
-/* line 299, ../scss/_main.scss */
+/* line 298, ../scss/_main.scss */
 .video-player {
   background-color: #000;
   width: 100%;
 }
-/* line 303, ../scss/_main.scss */
+/* line 302, ../scss/_main.scss */
 #video-wrapper .video-player {
   width: 100vw;
   position: relative;
@@ -349,7 +348,7 @@ figcaption strong {
   display: block;
 }
 
-/* line 311, ../scss/_main.scss */
+/* line 310, ../scss/_main.scss */
 .video-js {
   margin: 0 auto;
   min-width: 970px;
@@ -357,28 +356,28 @@ figcaption strong {
   display: block;
 }
 
-/* line 323, ../scss/_main.scss */
+/* line 322, ../scss/_main.scss */
 .player .video-wrapper .video {
   height: auto !important;
 }
 
-/* line 327, ../scss/_main.scss */
+/* line 326, ../scss/_main.scss */
 .player .target {
   height: auto !important;
 }
 
 /*TERMINAL*/
-/* line 333, ../scss/_main.scss */
+/* line 332, ../scss/_main.scss */
 .terminal a {
   text-decoration: none;
 }
 
-/* line 337, ../scss/_main.scss */
+/* line 336, ../scss/_main.scss */
 .terminal .video-player {
   display: none;
 }
 
-/* line 341, ../scss/_main.scss */
+/* line 340, ../scss/_main.scss */
 .terminal .video-section:after {
   content: none;
 }
