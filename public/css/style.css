@@ -735,6 +735,12 @@ figcaption strong {
   margin: 10px;
 }
 /* line 234, ../scss/partials/_page-style.scss */
+#slide-zero .dek .color-key {
+  display: block;
+  max-width: 600px;
+  width: 65%;
+}
+/* line 240, ../scss/partials/_page-style.scss */
 #slide-zero .dek .start-btn {
   font: 18px "HaasDisplayBold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   background-color: #000;
@@ -744,24 +750,24 @@ figcaption strong {
   margin-top: 3%;
   margin-left: 10px;
 }
-/* line 245, ../scss/partials/_page-style.scss */
+/* line 251, ../scss/partials/_page-style.scss */
 #slide-zero .illo-byline {
   font: 18px/22px "TiemposHeadlineWeb-Bold", "Georgia", "Cambria", "Times New Roman", "Times", serif;
   margin: 20px auto 60px;
   max-width: 800px;
 }
-/* line 251, ../scss/partials/_page-style.scss */
+/* line 257, ../scss/partials/_page-style.scss */
 #slide-zero .byline {
   font-weight: 600;
 }
 
-/* line 257, ../scss/partials/_page-style.scss */
+/* line 263, ../scss/partials/_page-style.scss */
 #slide-two .img_full {
   max-width: 1000px;
 }
 
 /*--- LEDE W/SMALL IMG ---*/
-/* line 265, ../scss/partials/_page-style.scss */
+/* line 271, ../scss/partials/_page-style.scss */
 .lede-small-img {
   width: 100%;
   height: auto;
@@ -770,31 +776,31 @@ figcaption strong {
   padding: 2% 0;
   border-bottom: 8px solid #000;
 }
-/* line 273, ../scss/partials/_page-style.scss */
+/* line 279, ../scss/partials/_page-style.scss */
 .lede-small-img.blue {
   background-color: #6dcff6;
 }
-/* line 277, ../scss/partials/_page-style.scss */
+/* line 283, ../scss/partials/_page-style.scss */
 .lede-small-img.purple {
   background-color: #b887be;
 }
-/* line 281, ../scss/partials/_page-style.scss */
+/* line 287, ../scss/partials/_page-style.scss */
 .lede-small-img.green {
   background-color: #a1cd54;
 }
-/* line 285, ../scss/partials/_page-style.scss */
+/* line 291, ../scss/partials/_page-style.scss */
 .lede-small-img.pink {
   background-color: #f5888b;
 }
-/* line 289, ../scss/partials/_page-style.scss */
+/* line 295, ../scss/partials/_page-style.scss */
 .lede-small-img.orange {
   background-color: #faa14f;
 }
-/* line 293, ../scss/partials/_page-style.scss */
+/* line 299, ../scss/partials/_page-style.scss */
 .lede-small-img.teal {
   background-color: #3fbeb2;
 }
-/* line 297, ../scss/partials/_page-style.scss */
+/* line 303, ../scss/partials/_page-style.scss */
 .lede-small-img .lede-img {
   width: 45%;
   display: block;
@@ -802,7 +808,7 @@ figcaption strong {
   bottom: 0;
   right: 7%;
 }
-/* line 305, ../scss/partials/_page-style.scss */
+/* line 311, ../scss/partials/_page-style.scss */
 .lede-small-img .lede-content {
   width: 40%;
   margin: 12% auto 0 15%;
@@ -810,27 +816,27 @@ figcaption strong {
   z-index: 1;
   font-family: "HaasDisplayBold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
-/* line 312, ../scss/partials/_page-style.scss */
+/* line 318, ../scss/partials/_page-style.scss */
 .lede-small-img .lede-content h1 {
   color: #000;
   display: inline;
   font-size: 4em;
 }
-/* line 318, ../scss/partials/_page-style.scss */
+/* line 324, ../scss/partials/_page-style.scss */
 .lede-small-img .lede-content .number {
   color: rgba(0, 0, 0, 0.15);
   font-size: 14em;
   font-family: "HaasDisplayBold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   margin: 0;
 }
-/* line 325, ../scss/partials/_page-style.scss */
+/* line 331, ../scss/partials/_page-style.scss */
 .lede-small-img .lede-content .title {
   display: inline;
   text-align: left;
   font-family: "HaasText", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 1.3em;
 }
-/* line 332, ../scss/partials/_page-style.scss */
+/* line 338, ../scss/partials/_page-style.scss */
 .lede-small-img .lede-content .blurb {
   font-family: "TiemposTextWeb-Regular", "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-size: 1.3em;
@@ -838,11 +844,11 @@ figcaption strong {
   margin: 20px 0;
   width: 90%;
 }
-/* line 339, ../scss/partials/_page-style.scss */
+/* line 345, ../scss/partials/_page-style.scss */
 .lede-small-img .lede-content .blurb strong {
   font-family: "HaasDisplayBold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
-/* line 344, ../scss/partials/_page-style.scss */
+/* line 350, ../scss/partials/_page-style.scss */
 .lede-small-img .lede-content .byline-feat {
   font-family: "HaasDisplayBold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   color: #000;
@@ -853,30 +859,30 @@ figcaption strong {
 
 /*--- VIDEO LEDE ---*/
 /*------------ VIDEO STYLES ------------*/
-/* line 364, ../scss/partials/_page-style.scss */
+/* line 370, ../scss/partials/_page-style.scss */
 .terminal video {
   display: none;
 }
 
-/* line 368, ../scss/partials/_page-style.scss */
+/* line 374, ../scss/partials/_page-style.scss */
 .dek {
   text-align: left;
   background-color: #ffffff;
   width: 100%;
 }
 
-/* line 374, ../scss/partials/_page-style.scss */
+/* line 380, ../scss/partials/_page-style.scss */
 .mobile-lede {
   display: none;
 }
 
-/* line 379, ../scss/partials/_page-style.scss */
+/* line 385, ../scss/partials/_page-style.scss */
 .lede, .parallax_wrapper {
   position: relative;
   z-index: 2;
 }
 
-/* line 385, ../scss/partials/_page-style.scss */
+/* line 391, ../scss/partials/_page-style.scss */
 .mobile-lede, .video-player {
   display: none;
 }
@@ -1040,60 +1046,64 @@ figcaption strong {
   #slide-zero .dek .color-code {
     font-size: 16px;
   }
-  /* line 165, ../scss/mediaqueries/_mobile.scss */
+  /* line 164, ../scss/mediaqueries/_mobile.scss */
+  #slide-zero .dek .color-key {
+    width: 100%;
+  }
+  /* line 169, ../scss/mediaqueries/_mobile.scss */
   #slide-zero .illo-byline {
     font-size: 14px;
     line-height: 16px;
     margin: 20px auto 60px;
     max-width: 100%;
   }
-  /* line 172, ../scss/mediaqueries/_mobile.scss */
+  /* line 176, ../scss/mediaqueries/_mobile.scss */
   #slide-zero .start-btn {
     font-size: 14px;
   }
 
-  /* line 179, ../scss/mediaqueries/_mobile.scss */
+  /* line 183, ../scss/mediaqueries/_mobile.scss */
   .video-section video {
     display: none;
   }
 
-  /* line 185, ../scss/mediaqueries/_mobile.scss */
+  /* line 189, ../scss/mediaqueries/_mobile.scss */
   .photo-byline span {
     display: block;
   }
 
-  /* line 191, ../scss/mediaqueries/_mobile.scss */
+  /* line 195, ../scss/mediaqueries/_mobile.scss */
   .video-player, .lede .text_divider {
     display: none;
   }
 
-  /* line 195, ../scss/mediaqueries/_mobile.scss */
+  /* line 199, ../scss/mediaqueries/_mobile.scss */
   .mobile-lede {
     display: block;
     width: 100%;
     margin: -25px 0 20px 0;
   }
 
-  /* line 202, ../scss/mediaqueries/_mobile.scss */
+  /* line 206, ../scss/mediaqueries/_mobile.scss */
   #header, .video-player, .lede .text_divider {
     display: none;
   }
 
-  /* line 206, ../scss/mediaqueries/_mobile.scss */
+  /* line 210, ../scss/mediaqueries/_mobile.scss */
   #subheader {
     font-size: 13px;
   }
-  /* line 209, ../scss/mediaqueries/_mobile.scss */
+  /* line 213, ../scss/mediaqueries/_mobile.scss */
   #subheader .hashtag {
     display: none;
   }
 
-  /* line 214, ../scss/mediaqueries/_mobile.scss */
+  /* line 218, ../scss/mediaqueries/_mobile.scss */
   .next-story {
     display: none;
   }
 
-  /* line 218, ../scss/mediaqueries/_mobile.scss */
+  /* line 222, ../scss/mediaqueries/_mobile.scss */
   #nav-previous,
   #nav-next {
     bottom: 0;
@@ -1103,24 +1113,24 @@ figcaption strong {
     background-color: #ffffff;
     border: 2px solid #ddd;
   }
-  /* line 227, ../scss/mediaqueries/_mobile.scss */
+  /* line 231, ../scss/mediaqueries/_mobile.scss */
   #nav-previous span,
   #nav-next span {
     top: 15%;
     opacity: 1;
   }
-  /* line 231, ../scss/mediaqueries/_mobile.scss */
+  /* line 235, ../scss/mediaqueries/_mobile.scss */
   #nav-previous span img,
   #nav-next span img {
     display: none;
   }
-  /* line 235, ../scss/mediaqueries/_mobile.scss */
+  /* line 239, ../scss/mediaqueries/_mobile.scss */
   #nav-previous span p,
   #nav-next span p {
     display: block;
   }
 
-  /* line 243, ../scss/mediaqueries/_mobile.scss */
+  /* line 247, ../scss/mediaqueries/_mobile.scss */
   #nav-next span p {
     text-align: right;
   }

@@ -231,6 +231,12 @@
 			margin: 10px;
 		}
 
+		.color-key {
+			display: block; 
+			max-width: 600px; 
+			width: 65%;
+		}
+
 		.start-btn {
 			font: 18px $HaasBold;
 			background-color: $black;
