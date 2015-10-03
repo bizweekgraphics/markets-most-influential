@@ -16,6 +16,10 @@
 			width: 80%;
 		}
 
+		.related-story {
+			width: 80%;
+		}
+
 	}
 
 	.img_right {
@@ -76,6 +80,7 @@
 	}
 
 	#subheader {
+
 		.markets-logo {
 			margin-left: 10px;
 		}
@@ -83,6 +88,21 @@
 		.menu-btn {
 			margin-right: 10px;
 		}
+	}
+
+	.overlay {
+
+	    .menu-item {
+			width: 20%;
+
+			.menu-number {
+				font-size: 3.5em;
+			}
+
+			.menu-name {
+				font-size: 1.2em;
+			}
+	    }
 	}
 
 }

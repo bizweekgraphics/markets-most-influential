@@ -37,41 +37,41 @@ $j(document).ready(function(){
 
     SafariOnly();
 
-    setInterval(stickySubNav, 60);
+    // setInterval(stickySubNav, 60);
 
 });
 
  
-function stickySubNav() {
-    scrollPos = $j(document).scrollTop();
-    var windowWidth = $j(window).width();
+// function stickySubNav() {
+//     scrollPos = $j(document).scrollTop();
+//     var windowWidth = $j(window).width();
     
 
-    if (windowWidth <= 1160 && scrollPos > 91) {
-        $j('#subheader').css({
-            'top': '0'+ 'px'
+//     if (windowWidth <= 1160 && scrollPos > 91) {
+//         $j('#subheader').css({
+//             'top': '0'+ 'px'
 
-        });
+//         });
 
-    } else if (windowWidth > 768 && scrollPos >= 121) {
+//     } else if (windowWidth > 768 && scrollPos >= 121) {
 
-        $j('#subheader').css({
-            'top': '91'+ 'px'
-        });
+//         $j('#subheader').css({
+//             'top': '91'+ 'px'
+//         });
 
-    } else if (windowWidth > 768 && scrollPos < 121) {
+//     } else if (windowWidth > 768 && scrollPos < 121) {
 
-        $j('#subheader').css({
-            'top': '121'+ 'px'
-        });
+//         $j('#subheader').css({
+//             'top': '121'+ 'px'
+//         });
 
-    } else if (windowWidth <= 768 && scrollPos < 91)  {
-        $j('#subheader').css({
-            'top': '91'+ 'px'
-        });
-    }
+//     } else if (windowWidth <= 768 && scrollPos < 91)  {
+//         $j('#subheader').css({
+//             'top': '91'+ 'px'
+//         });
+//     }
 
-}
+// }
 
 
 
@@ -119,6 +119,7 @@ function next() {
     $j('#nav-next').on('click', function() {
         var page = $j('.slide').eq(currentSlide+1).attr('data-page');
         window.location.hash = page;
+        tracker('load', 'slide-'+(currentSlide+1), 'null')
         
         //Scroll to the Top
         $j('html, body').scrollTop(0);
@@ -131,6 +132,7 @@ function previous() {
     $j('#nav-previous').on('click', function(){
         var page = $j('.slide').eq(currentSlide-1).attr('data-page');
         window.location.hash = page;
+        tracker('load', 'slide-'+(currentSlide-1), 'null')
         
         //Scroll to the Top
         $j('html, body').scrollTop(0);
@@ -141,7 +143,7 @@ function previous() {
 //add selected class to current slide
 function currentSlidePage() {
 
-    updateSlideAd(currentSlide)
+    // updateSlideAd(currentSlide)
 
     if (currentSlide === -1 && window.location.hash[0] === undefined) {
         var page = $j('.slide').eq(currentSlide+1).attr('data-page');
@@ -196,7 +198,12 @@ function SafariOnly() {
     var videoPadding = $j('.video-section video').height();
 
 
-    // if(/safari/.test(uagent) && !/chrome/.test(uagent))
+    if(/safari/.test(uagent) && !/chrome/.test(uagent) && !(navigator.userAgent.match(/(iPhone|iPod|iPad)/i))) {
+        console.log('safari mac desktop');
+
+        $j('.video-section').css({'display': 'none'});
+        $j('.safari-video').css({'display': 'block'});
+    }
     // {
 
 

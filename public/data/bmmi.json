@@ -1,0 +1,395 @@
+{
+  "Why are you influential?": {
+    "I build companies": {
+      "Do you favor old-line industries?": {
+        "Yes": {
+          "Are you the richest man in Africa?": {
+            "Yes": {"Aliko Dangote":1},
+            "No": {
+              "Do you invest in pickles, ketchup, and cheese?": {
+                "Yes": {
+                  "Do you invest in beer?": {
+                    "Yes": {"Jorge Paulo Lemann":1},
+                    "No": {
+                      "Are you paid less than $1 million?": {
+                        "Yes": {"Warren Buffett":1}
+                      }
+                    }
+                  }
+                },
+                "No": {
+                  "Did you take over the family business?": {
+                    "Yes": {"Akio Toyoda":1}
+                  }
+                }
+              }
+            }
+          }
+        },
+        "No": {
+          "Did you found your own company?": {
+            "Yes": {
+              "Do you own an influential newspaper?": {
+                "Yes": {
+                  "Do you support pro-democracy protesters?": {
+                    "Yes": {
+                      "Jimmy Lai":1
+                    },
+                    "No": {
+                      "Did your company pass Wal-Mart in market cap?": {
+                        "Yes": {"Jeff Bezos":1}
+                      }
+                    }
+                  }
+                },
+                "No": {
+                  "Are you the richest man in China?": {
+                    "Yes": {"Wang Jianlin":1}
+                  }
+                }
+              }
+            },
+            "No": {
+              "Do you face activist investors who own shares?": {
+                "Yes": {
+                  "Have you faced a proxy fight with activists?": {
+                    "Yes": {
+                      "Ellen Kullman":1
+                    },
+                    "No": {
+                      "Have you doubled profits since taking the top job?": {
+                        "Yes": {"Tim Cook":1}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "I define banking": {
+      "Do you run a bank?": {
+        "Yes": {
+          "Are you in your job since before the financial crisis?": {
+            "Yes": {
+              "Will you be paid less than $100,000 this year?": {
+                "Yes": {
+                  "Jiang Jianqing":1
+                },
+                "No": {
+                  "Did you start in trading?": {
+                    "Yes": {
+                      "Lloyd Blankfein":1
+                    },
+                    "No": {
+                      "Did you get burned by trading?": {
+                        "Yes": {"Jamie Dimon":1},
+                        "No": {
+                          "Do you dominate U.S. mortgages?": {
+                            "Yes": {"John Stumpf":1}
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "No": {
+              "Did you take over the family business?": {
+                "Yes": {"Ana Botin":1},
+                "No": {
+                  "Did you accept French Legion D'Honneur?": {
+                    "Yes": {"Tidjane Thiam":1},
+                    "No": {
+                      "Did you say no thanks?": {
+                        "Yes": {"Thomas Piketty":1}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "No": {
+          "Do you scare bankers?": {
+            "Yes": {"Elizabeth Warren":1}
+          }
+        }
+      }
+    },
+    "I sway economic policy": {
+      "Do you run a central bank?": {
+        "Yes": {
+          "Did you used to work for Goldman Sachs?": {
+            "Yes": {
+              "Mario Draghi": 1
+            },
+            "No": {
+              "Did you meet your spouse at the Fed?": {
+                "Yes": {
+                  "Janet Yellen": 1
+                }
+              }
+            }
+          }
+        },
+        "No": {
+          "Do you set budget policy?": {
+            "Yes": {
+              "Might you get fastest growth of any BRIC this year?": {
+                "Yes": {
+                  "Narenda Modi": 1
+                },
+                "No": {
+                  "Am you boosting stimulus?": {
+                    "Yes": {
+                      "Xi Jinping": 1
+                    },
+                    "No": {
+                      "Do you promise to balance the budget in 2016?": {
+                        "Yes": {
+                          "Angela Merkel": 1
+                        },
+                        "No": {
+                          "Do you aim for a budget surplus by 2019 or 2020?": {
+                            "Yes": {
+                              "George Osborne": 1
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "No": {
+              "Are you hobbled by Congress?": {
+                "Yes": {
+                  "Barack Obama": 1
+                },
+                "No": {
+                  "Did you share a cave with Xi Jinping?": {
+                    "Yes": {
+                      "Wang Qishan": 1
+                    },
+                    "No": {
+                      "Do you favor boosting stimulus?": {
+                        "Yes": {
+                          "Paul Krugman": 1
+                        },
+                        "No": {
+                          "Do you have a monetary policy rule named for you?": {
+                            "Yes": {
+                              "John Taylor": 1
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "I shape tech": {
+      "Do you provide venture capital?": {
+        "Yes": {
+          "Funded Lyft": {
+            "Yes": {
+              "Are you mentioned as possible Treasury Secretary?": {
+                "Yes": {
+                  "Carl Icahn": 1
+                },
+                "No": {
+                  "Do you expect Silicon Valley to upend Wall Street?": {
+                    "Yes": {
+                      "Marc Andreessen": 1
+                    }
+                  }
+                }
+              }
+            },
+            "No": {
+              "Did you fund Eatwith?": {
+                "Yes": {
+                  "Reid Hoffman": 1
+                }
+              }
+            }
+          }
+        },
+        "No": {
+          "Do you run a fintech company?": {
+            "Yes": {
+              "Did you used to work for Jamie Dimon?": {
+                "Yes": {
+                  "Blythe Masters": 1
+                },
+                "No": {
+                  "Do you have Larry Summers on your board?": {
+                    "Yes": {
+                      "Renaud Laplanche": 1
+                    }
+                  }
+                }
+              }
+            },
+            "No": {
+              "Are you a top fintech investment banker?": {
+                "Yes": {
+                  "Jane Gladstone": 1
+                },
+                "No": {
+                  "Are you a top technology banker in China?": {
+                    "Yes": {
+                      "Fan Bao": 1
+                    },
+                    "No": {
+                      "Are you part of the Paypal Mafia?": {
+                        "Yes": {
+                          "Elon Musk": 1
+                        },
+                        "No": {
+                          "Did you leave Wall Street for a tech job?": {
+                            "Yes": {
+                              "Ruth Porat": 1
+                            },
+                            "No": {
+                              "Did you leave Stanford for your current job?": {
+                                "Yes": {
+                                  "Elizabeth Holmes": 1
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "I run money": {
+      "Do you oversee more money than just about anyone?": {
+        "Yes": {
+          "Do you dominate the ETF industry?": {
+            "Yes": {
+              "Larry Fink": 1
+            },
+            "No": {
+              "Did you take over the family business?": {
+                "Yes": {
+                  "Abigail Johnson": 1
+                }
+              }
+            }
+          }
+        },
+        "No": {
+          "Do you oversee more hedge fund money than anyone?": {
+            "Yes": {
+              "Ray Dalio": 1
+            },
+            "No": {
+              "Did you do the largest real estate deal this year?": {
+                "Yes": {
+                  "Jonathan Gray": 1
+                },
+                "No": {
+                  "Do you get to call yourself the Bond King now?": {
+                    "Yes": {
+                      "Jeffry Gundlach": 1
+                    },
+                    "No": {
+                      "Are you focused on Korea?": {
+                        "Yes": {
+                          "Did you lose a fight with a Korean chaebol?": {
+                            "Yes": {
+                              "Paul Singer": 1
+                            },
+                            "No": {
+                              "Did you used to work for Goldman Sachs?": {
+                                "Yes": {
+                                  "Michael Kim": 1
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "No": {
+                          "Do you have Ben Bernanke on your payroll?": {
+                            "Yes": {
+                              "Ken Griffin": 1
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "I lead with ideas": {
+      "Are you reshaping academic economics?": {
+        "Yes": {
+          "Do you argue that people don't obey economic models?": {
+            "Yes": {
+              "Richard Thaler": 1
+            },
+            "No": {
+              "Do you favor taxing the rich?": {
+                "Yes": {
+                  "Thomas Piketty": 1
+                }
+              }
+            }
+          }
+        },
+        "No": {
+          "Are you skeptical of China's handling of its economy?": {
+            "Yes": {
+              "Ruchir Sharma": 1
+            },
+            "No": {
+              "Do you favor debt relief for Greece?": {
+                "Yes": {
+                  "Christine Lagarde": 1
+                },
+                "No": {
+                  "Do you campaign against corruption in Africa?": {
+                    "Yes": {
+                      "Mo Ibrahim": 1
+                    },
+                    "No": {
+                      "Do you see climate change as a spiritual issue?": {
+                        "Yes": {
+                          "Pope Francis": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

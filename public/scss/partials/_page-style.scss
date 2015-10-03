@@ -56,6 +56,18 @@
 		text-decoration: none;
 	}
 
+	.body-copy {
+		a {
+			text-decoration: underline;
+		}
+
+		.related-story {
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+
 	.slide-byline {
 		font-family: $NHaas-medium;
 		font-size: 19px;
@@ -93,6 +105,10 @@
 	 	&:hover {
 		    opacity: 0.7;
 	    }
+
+	    p {
+	    	display: none;
+	    }
 	}
 }
 
@@ -112,7 +128,6 @@
 .next-story {
 	margin: 50px auto;
 	width: 70%;
-	border-top: 4px solid #ddd;
 
 	p {
 		font-family: $HaasBold;
@@ -141,6 +156,10 @@
 	}
 }
 
+.body-copy + .next-story {
+	border-top: 4px solid #ddd;
+}
+
 .photo-byline {
 	margin-top: 10px;
 	font: 1em/ 1.53em 'HaasText', 'Helvetica';
@@ -160,10 +179,10 @@
 #slide-zero {
 	width: 100%;
 	background-color: #ebebeb;
-	background-image: url('../img/50Final02.jpg');
-	background-position: center 4%;
+	background-image: url('../img/50Final03.jpg');
+	background-position: center 2%;
 	background-repeat: no-repeat;
-	background-size: 70%;
+	background-size: 75%;
 	
 	.lede-content, .dek, .illo-byline, .start-btn, .byline {
 		color: $black;
@@ -173,11 +192,11 @@
 		position: relative;
 		width: 80%;
 		margin: 0 auto;
-		padding: 49% 0;
+		padding: 49% 0 10%;
 	}
 	
 	h1 {
-		font: 84px/100px $NHaas-bold;
+		font: 78px/84px $NHaas-bold;
 		text-align: center;
 		padding: 15px 0 10px;
 		margin-bottom: 30px;
@@ -201,6 +220,26 @@
 				line-height: 34px;
 			}
 		}
+
+		.color-code {
+			width: 30%;
+			display: inline-block;
+			vertical-align: middle;
+			min-height: 40px;
+			font: 20px $HaasBold;
+			padding: 10px;
+			margin: 10px;
+		}
+
+		.start-btn {
+			font: 18px $HaasBold;
+			background-color: $black;
+			color: $white;
+			padding: 20px;
+			width: 28%;
+			margin-top: 3%;
+			margin-left: 10px;
+		}
 	}
 
 	.illo-byline {
@@ -212,15 +251,6 @@
 	.byline {
 		font-weight: 600;
 	}
-
-	.start-btn {
-		font: 18px $HaasBold;
-		background-color: $black;
-		color: $white;
-		padding: 20px;
-		width: 200px;
-		margin: 0 0 0 12%;
-	}
 }
 
 #slide-two {
@@ -229,62 +259,6 @@
 	}
 }
 
-/*--- LEDE W/FULL-WIDTH IMAGE & TEXT OVERLAY ---*/
-
-.lede-full-width-img {
-	width: 100%;
-	height: auto;
-	position: relative;
-
-	.lede-img {
-		width: 100%;
-		margin-bottom: 30px;
-	}
-
-	.lede-content {
-		width: 40%;
-		margin: -25% auto 0 15%;
-		position: absolute;
-		z-index: 1;
-		font-family: $HaasBold;
-		
-		h1 {
-			color: $black;
-			display: inline;
-			font-size: 4em;
-		}
-
-		.number {
-			color: rgba(0,0,0,0.15);
-			font-size: 14em;
-			font-family: $HaasBold;
-			margin: 0;
-		}
-
-		.title {
-			display: inline;
-			text-align: left;
-			font-family: $NHaas;
-			font-size: 1.3em;
-		}
-
-		.blurb {
-			font-family: $tiempos;
-			font-size: 1.3em;
-			line-height: 1.5em;
-			margin: 20px 0;
-			width: 90%;
-		}
-
-		.byline-feat {
-			font-family: $HaasBold;
-			color: $black;
-			margin: 5px 0;
-			background-color: $white;
-			display: inline;
-		}
-	}
-}
 
 /*--- LEDE W/SMALL IMG ---*/
 
@@ -297,27 +271,27 @@
 	border-bottom: 8px solid $black;
 
 	&.blue {
-		background-color: #6dcffc;
+		background-color: $light-blue;
 	}
 
 	&.purple {
-		background-color: #b887be;
+		background-color: $purple;
 	}
 
 	&.green {
-		background-color: #a1cd54;
+		background-color: $green;
 	}
 
 	&.pink {
-		background-color: #f5888b;
+		background-color: $pink;
 	}
 
 	&.orange {
-		background-color: #faa14f;
+		background-color: $orange;
 	}
 
 	&.teal {
-		background-color: #3fbeb2;
+		background-color: $teal;
 	}
 
 	.lede-img {
@@ -361,6 +335,10 @@
 			line-height: 1.5em;
 			margin: 20px 0;
 			width: 90%;
+
+			strong {
+				font-family: $NHaas-bold;
+			}
 		}
 
 		.byline-feat {

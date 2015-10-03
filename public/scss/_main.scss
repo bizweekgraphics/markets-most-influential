@@ -2,6 +2,10 @@ body {
 	background-color: #f2f2f2;
 }
 
+#header-fix {
+	height: 92px;	
+}
+
 .lede, p {
 	width: 50%;
 	max-width: 640px;
@@ -11,12 +15,11 @@ p {
 	margin: 30px auto;
 	font: 18px/29px $tiempos;
 	color: #3c3c3c;
+}
 
-
-	em {
-		font-family: $tiempos-italic;
-		font-style: normal;
-	}
+em {
+	font-family: $tiempos-italic;
+	font-style: normal;
 }
 
 .icon-font {
@@ -42,6 +45,10 @@ p {
 		font-size: 20px;
 	}
 
+	a {
+		text-decoration: underline;
+	}
+
 	.pullquote {
 		font: 3em/1.2em $tiempos-bold;
 		width: 70%;
@@ -49,17 +56,68 @@ p {
 	}
 
 	blockquote.twitter-tweet {
+	  display: inline-block;
+	  padding: 16px;
 	  margin: 10px auto;
 	  max-width: 640px;
+	  border: #ddd 1px solid;
+	  border-top-color: #eee;
+	  border-bottom-color: #bbb;
+	  border-radius: 5px;
+	  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+	  font: bold 14px/18px Helvetica, Arial, sans-serif;
+	  color: #000;
+	}
+	 
+	blockquote.twitter-tweet p {
+	  font: normal 18px/24px Georgia, "Times New Roman", Palatino, serif;
+	  margin: 0 5px 10px 0;
+	}
+	 
+	blockquote.twitter-tweet a[href^="https://twitter.com"] {
+	  font-weight: normal;
+	  color: #666;
+	  font-size: 12px;
 	}
 
 	.related-story {
 		font-family: $NHaas-bold;
 		background-color: #ddd;
 		padding: 5px 13px;
-		width: 26%;
-		margin-left: 28%;
+		width: 50%;
+		margin-left: auto;
 		margin-top: 50px;
+		text-align: left;
+		line-height: 26px;
+
+		.tout {
+			font-family: $NHaas;
+			font-size: 16px;
+		}
+
+	}
+
+	.tweet-embed {
+		margin: 0 auto;
+		width: 50%;
+		max-width: 640px;
+	}
+
+	.number-style {
+		margin: 0 auto;
+		width: 50%;
+
+		.big-number {
+			font: 3em/1.2em $tiempos-bold;
+			width: 28%;
+			float: left;
+			margin-top: 0;
+		}
+
+		.number-desc {
+			padding-left: 15%;
+		}
+
 	}
 }
 
@@ -120,7 +178,7 @@ hr {
   position: relative;
   background-color: #ddd;
 }
-.bannerbox .bannerad {
+.bannerbox .container {
   width: 728px;
   height: 90px;
   background-color: #fff;
@@ -151,7 +209,6 @@ hr {
 	border-bottom: 1px solid #c1c1c1;
 	z-index: 11;
 	width: 100%;
-	margin-top: -1px;
 
 	@include transition(all 0.3s ease-out 0.1s);
 
@@ -164,8 +221,7 @@ hr {
 
 	.markets-logo {
 		margin-left: 60px;
-		height: 20px;
-		vertical-align: middle;
+		vertical-align: baseline;
 	}
 	
 	a {
@@ -327,16 +383,51 @@ figcaption {
 	height: auto !important;
 }
 
+.safari-video {
+	display: none;
+	max-width: 970px;
+	margin: 0 auto;
+
+	img {
+		width: 100%;
+	}
+
+	.watch-video {
+		background-color: $black;
+		width: 20%;
+		padding: 10px;
+		color: $white;
+		font: 20px $HaasBold;
+		text-align: center;
+		margin: -20% auto 20%;
+		z-index: 50;
+		position: relative;
+	}
+}
+
 /*TERMINAL*/
 
-.terminal a {
-	text-decoration: none;
-}
+.terminal {
+	a {
+		text-decoration: none;
+	}
 
-.terminal .video-player {
-	display: none;
-}
+	.slide .body-copy {
+		a {
+			text-decoration: none;
+		}
+	}
 
-.terminal .video-section:after {
-	content: none;
+	.video-player, .video-section, .safari-video, .box-unit, .related-story {
+		display: none;
+	}
+
+	.video-section:after {
+		content: none;
+	}
+
+	.slide-social {
+		display: none;
+	}
+
 }
